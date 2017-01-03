@@ -23,9 +23,9 @@ module.exports = {
         loader: 'eslint-loader',
       },
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         include: path.join(__dirname, 'src'),
-        loader: ExtractTextPlugin.extract('style', 'css'),
+        loader: ExtractTextPlugin.extract('style', ['css','autoprefixer','sass']),
       },
     ],
   },

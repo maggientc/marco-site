@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../css/main.css';
+import '../css/main.scss';
 
 const app = document.getElementById('app');
 
