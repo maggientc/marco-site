@@ -15,6 +15,7 @@
     "babel-preset-react": "^6.16.0",
     "eslint": "^3.12.2",
     "eslint-config-google": "^0.7.1",
+    "eslint-loader": "^1.6.1",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-react": "^6.8.0",
     "webpack": "^1.14.0",
@@ -24,7 +25,6 @@
     "dev": "./node_modules/.bin/webpack-dev-server --content-base dist --inline --hot --colors",
     "build": "./node_modules/.bin/webpack -d",
     "build-prod": "./node_modules/.bin/webpack -p",
-    "lint-build": "npm run test:lint && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:lint": "./node_modules/.bin/eslint . --ext .js --ext .jsx --ignore-path .gitignore --cache"
   }

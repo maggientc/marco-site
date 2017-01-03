@@ -16,6 +16,11 @@ module.exports = {
           presets: ['react', 'latest'],
         },
       },
+      {
+        test: /\.jsx?$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'eslint-loader',
+      },
     ],
   },
   output: {
@@ -27,4 +32,7 @@ module.exports = {
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({mangle: false, sourcemap: false}),
   ],
+  eslint: {
+    configFile: './.eslintrc'
+  },
 };
