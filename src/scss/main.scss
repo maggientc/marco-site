@@ -1,8 +1,8 @@
-$font-stack: Helvetica, sans-serif;
+$font-stack: 'Roboto', sans-serif;
 $primary-color: #333;
 
 body {
-  font: 100% $font-stack;
+  font-family: $font-stack;
   color: $primary-color;
-  display: flex;
+  height: 100%;
 }
