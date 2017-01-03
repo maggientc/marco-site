@@ -33,6 +33,6 @@ module.exports = {
     new webpack.optimize.UglifyJsPlugin({mangle: false, sourcemap: false}),
   ],
   eslint: {
-    configFile: './.eslintrc'
+    configFile: './.eslintrc',
   },
 };
