@@ -1,6 +1,7 @@
-let debug = process.env.NODE_ENV !== 'production';
-let webpack = require('webpack');
-let path = require('path');
+var debug = process.env.NODE_ENV !== 'production';
+var webpack = require('webpack');
+var path = require('path');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   context: path.join(__dirname, 'src'),
@@ -18,8 +19,13 @@ module.exports = {
       },
       {
         test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/,
+        include: path.join(__dirname, 'src'),
         loader: 'eslint-loader',
+      },
+      {
+        test: /\.scss$/,
+        include: path.join(__dirname, 'src'),
+        loader: ExtractTextPlugin.extract('style', ['css','autoprefixer','sass']),
       },
     ],
   },
@@ -27,7 +33,10 @@ module.exports = {
     path: path.join(__dirname, 'dist'),
     filename: 'client.min.js',
   },
-  plugins: debug ? [] : [
+  plugins: debug ? [
+    new ExtractTextPlugin("styles.css"),
+    ] : [
+    new ExtractTextPlugin("styles.css"),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({mangle: false, sourcemap: false}),
