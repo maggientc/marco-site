@@ -9,15 +9,23 @@
   },
   "devDependencies": {
     "babel-core": "^6.21.0",
+    "babel-eslint": "^7.1.1",
     "babel-loader": "^6.2.10",
     "babel-preset-latest": "^6.16.0",
     "babel-preset-react": "^6.16.0",
+    "eslint": "^3.12.2",
+    "eslint-config-google": "^0.7.1",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-react": "^6.8.0",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
   },
   "scripts": {
     "dev": "./node_modules/.bin/webpack-dev-server --content-base dist --inline --hot --colors",
     "build": "./node_modules/.bin/webpack -d",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-prod": "./node_modules/.bin/webpack -p",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:lint": "./node_modules/.bin/eslint . --ext .js --ext .jsx --ignore-path .gitignore --cache"
   }
 }

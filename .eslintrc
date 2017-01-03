@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "google",
+  ],
+  "plugins": [
+    "import",
+    "react"
+  ],
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "strict": 0,
+    "no-console": 0,
+    "linebreak-style": [
+      "error",
+      "windows"
+    ],
+  },
+}
