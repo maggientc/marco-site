@@ -2,11 +2,13 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:flowtype/recommended",
     "google",
   ],
   "plugins": [
     "import",
-    "react"
+    "react",
+    "flowtype",
   ],
   "parser": "babel-eslint",
   "env": {
