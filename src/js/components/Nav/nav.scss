@@ -1,0 +1,29 @@
+.nav-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+  .nav-navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+
+    li.nav-left {
+      float: left;
+    }
+
+    li.nav-right {
+      float: right;
+    }
+
+    .nav-link {
+      padding: 16px;
+      text-decoration: none;
+      display: inline-block;
+      color: inherit;
+    }
+  }
+}

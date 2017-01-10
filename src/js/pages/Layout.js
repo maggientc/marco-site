@@ -20,4 +20,10 @@ class Layout extends React.Component {
   }
 }
 
+Layout.propTypes = {
+  params: React.PropTypes.shape({
+    page: React.PropTypes.string,
+  }),
+};
+
 export default Layout;
