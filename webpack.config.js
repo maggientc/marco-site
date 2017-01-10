@@ -31,7 +31,7 @@ module.exports = {
     ],
   },
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'src'),
     filename: 'client.min.js',
   },
   plugins: debug ? [
@@ -46,5 +46,8 @@ module.exports = {
   ],
   eslint: {
     configFile: './.eslintrc',
+  },
+  devServer: {
+    historyApiFallback: true,
   },
 };
