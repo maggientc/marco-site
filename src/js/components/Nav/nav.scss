@@ -1,0 +1,44 @@
+$icon-img: url(../../img/icon.png);
+
+.nav-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+  .nav-navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+
+    li.nav-left {
+      float: left;
+
+      .nav-link {
+        background-position: center;
+        background-size: cover;
+        background-image: $icon-img;
+        width: 145px;
+        height: 44px;
+        margin: 4px;
+      }
+    }
+
+    li.nav-right {
+      float: right;
+
+      .nav-link {
+        padding: 16px;
+        line-height: 24px;
+      }
+    }
+
+    .nav-link {
+      text-decoration: none;
+      display: inline-block;
+      color: inherit;
+    }
+  }
+}
