@@ -1,0 +1,8 @@
+$bg-img: url(../../img/banner.jpg);
+
+.home-display-container {
+  background-position: center;
+  background-size: cover;
+  background-image: $bg-img;
+  min-height: 100%;
+}
