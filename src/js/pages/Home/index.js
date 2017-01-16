@@ -1,4 +1,5 @@
 import React from 'react';
+import './home.scss';
 
 /** Home component */
 class Home extends React.Component {
@@ -10,7 +11,7 @@ class Home extends React.Component {
   /** @return {html} Home */
   render() {
     return (
-      <div>I am Home</div>
+      <header className="home-display-container" id="home"></header>
     );
   }
 }
