@@ -26,7 +26,12 @@ module.exports = {
       {
         test: /\.scss$/,
         include: path.join(__dirname, 'src'),
-        loader: ExtractTextPlugin.extract('style', ['css','autoprefixer','sass']),
+        loader: ExtractTextPlugin.extract('style-loader', ['css-loader','autoprefixer-loader', 'resolve-url-loader', 'sass-loader?sourceMap']),
+      },
+      { 
+        test: /\.(png|jpg)$/,
+        include: path.join(__dirname, 'src'),
+        loader: 'url-loader?limit=80000'
       },
     ],
   },

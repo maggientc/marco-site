@@ -13,14 +13,23 @@
 
     li.nav-left {
       float: left;
+
+      img {
+        padding: 8px;
+        height: 40px;
+      }
     }
 
     li.nav-right {
       float: right;
+
+      .nav-link {
+        padding: 16px;
+        line-height: 24px;
+      }
     }
 
     .nav-link {
-      padding: 16px;
       text-decoration: none;
       display: inline-block;
       color: inherit;

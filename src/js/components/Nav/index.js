@@ -13,25 +13,28 @@ class Nav extends React.Component {
 
   /** @return {html} Nav */
   render() {
+    const labels = this.props.labels;
     return (
       <div className="nav-top">
         <ul className="nav-navbar">
           <li className="nav-left">
-            <Link className="nav-link" to="/home">LOGO</Link>
+            <Link className="nav-link" to="/">
+              <img src="../../img/icon.png" />
+            </Link>
           </li>
           <li className="nav-right">
-            <Link className="nav-link" to="/about">ABOUT</Link>
+            <Link className="nav-link" to="/about">{labels.about}</Link>
             <Link className="nav-link" to="/team">
-              <i className="fa fa-user"></i> TEAM
+              <i className="fa fa-user"></i> {labels.team}
             </Link>
             <Link className="nav-link" to="/work">
-              <i className="fa fa-th"></i> WORK
+              <i className="fa fa-th"></i> {labels.work}
             </Link>
             <Link className="nav-link" to="/pricing">
-              <i className="fa fa-usd"></i> PRICING
+              <i className="fa fa-usd"></i> {labels.pricing}
             </Link>
             <Link className="nav-link" to="/contact">
-              <i className="fa fa-envelope"></i> CONTACT
+              <i className="fa fa-envelope"></i> {labels.contact}
             </Link>
           </li>
         </ul>
@@ -39,5 +42,9 @@ class Nav extends React.Component {
     );
   }
 }
+
+Nav.propTypes = {
+  labels: React.PropTypes.object,
+};
 
 export default Nav;
