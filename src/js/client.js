@@ -1,8 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {Router, Route, browserHistory} from 'react-router';
+
+import Layout from './pages/Layout';
+import '../scss/main.scss';
 
 const app = document.getElementById('app');
 
 ReactDOM.render(
-  <h1>setup success</h1>,
+  <Router history={browserHistory}>
+    <Route path="/(:page)" component={Layout}></Route>
+  </Router>,
 app);
