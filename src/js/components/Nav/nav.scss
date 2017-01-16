@@ -32,6 +32,10 @@ $icon-img: url(../../img/icon.png);
       .nav-link {
         padding: 16px;
         line-height: 24px;
+
+        &:hover {
+          background-color: #ccc;
+        }
       }
     }
 
