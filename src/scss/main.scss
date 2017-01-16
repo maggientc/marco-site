@@ -1,5 +1,6 @@
+@import './colors';
+
 $font-stack: 'Roboto', sans-serif;
-$primary-color: #000;
 
 html {
   height: 100%;
@@ -7,7 +8,7 @@ html {
 
 body {
   font-family: $font-stack;
-  color: $primary-color !important;;
+  color: $black !important;;
   height: 100%;
   margin: 0;
   padding: 0;
