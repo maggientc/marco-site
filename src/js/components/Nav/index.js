@@ -18,9 +18,7 @@ class Nav extends React.Component {
       <div className="nav-top">
         <ul className="nav-navbar">
           <li className="nav-left">
-            <Link className="nav-link" to="/">
-              <img src="../../img/icon.png" />
-            </Link>
+            <Link className="nav-link" to="/" />
           </li>
           <li className="nav-right">
             <Link className="nav-link" to="/about">{labels.about}</Link>

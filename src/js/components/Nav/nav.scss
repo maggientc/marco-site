@@ -1,3 +1,5 @@
+$icon-img: url(../../img/icon.png);
+
 .nav-top {
   position: fixed;
   top: 0;
@@ -14,9 +16,13 @@
     li.nav-left {
       float: left;
 
-      img {
-        padding: 8px;
-        height: 40px;
+      .nav-link {
+        background-position: center;
+        background-size: cover;
+        background-image: $icon-img;
+        width: 145px;
+        height: 44px;
+        margin: 4px;
       }
     }
 
