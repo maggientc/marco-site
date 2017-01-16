@@ -36,7 +36,7 @@
     "webpack-dev-server": "^1.16.2"
   },
   "scripts": {
-    "dev": "./node_modules/.bin/webpack-dev-server --content-base src --inline --hot --colors",
+    "dev": "./node_modules/.bin/webpack-dev-server --content-base src/build --inline --hot --colors",
     "build": "./node_modules/.bin/webpack -d",
     "build-prod": "./node_modules/.bin/webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1",

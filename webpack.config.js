@@ -31,12 +31,12 @@ module.exports = {
       { 
         test: /\.(png|jpg)$/,
         include: path.join(__dirname, 'src'),
-        loader: 'url-loader?limit=80000'
+        loader: 'url-loader?limit=25000&name=img/[hash].[ext]'
       },
     ],
   },
   output: {
-    path: path.join(__dirname, 'src'),
+    path: __dirname + '/src/build',
     filename: 'client.min.js',
   },
   plugins: debug ? [
