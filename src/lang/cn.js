@@ -13,6 +13,10 @@ const content = {
     'home': {
       'content': 'I am Home-cn',
     },
+    'about': {
+      'title': 'ABOUT THE COMPANY-cn',
+      'subTitle': 'Key features of our company-cn',
+    },
   },
 };
 

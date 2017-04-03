@@ -3,6 +3,7 @@
 import React from 'react';
 import Nav from '../components/Nav';
 import Home from './Home';
+import About from './About';
 import Translation from '../../lang/translation';
 
 /** layout component */
@@ -17,11 +18,12 @@ class Layout extends React.Component {
     // const params = this.props.params;
     // console.log('page', params.page? params.page : 'no page');
 
-    const {component} = Translation.getContent('en');
+    const {component, page} = Translation.getContent('en');
     return (
       <div>
-        <Nav labels={component.nav}/>
+        <Nav labels={component.nav} />
         <Home />
+        <About labels={page.about} />
       </div>
     );
   }
