@@ -25,6 +25,13 @@ const content = {
       'supportTitle': 'Support',
       'supportContact': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
     },
+    'contact': {
+      'title': 'CONTACT',
+      'subTitle': 'Lets get in touch.',
+      'address': 'Chicago, US',
+      'phone': 'Phone: +00 151515',
+      'email': 'Email: mail@mail.com',
+    },
   },
 };
 

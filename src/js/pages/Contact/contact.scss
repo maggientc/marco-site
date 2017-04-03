@@ -1,0 +1,24 @@
+#contact {
+  .contact-container {
+    margin-top: 64px;
+    padding: 0 8px;
+    display: flex;
+    justify-content: center;
+
+    i {
+      font-size: 2em;
+      margin-right: 16px;
+      width: 1em;
+      text-align: center;
+    }
+
+    .contact-list {
+      width: 50%;
+    }
+
+    .contact-map {
+      width: 50%;
+      height: 400px;
+    }
+  }
+}
