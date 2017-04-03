@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
@@ -26,15 +27,10 @@ class Layout extends React.Component {
         <Home />
         <About labels={page.about} />
         <Contact labels={page.contact} />
+        <Footer />
       </div>
     );
   }
 }
-
-Layout.propTypes = {
-  params: React.PropTypes.shape({
-    page: React.PropTypes.string,
-  }),
-};
 
 export default Layout;
