@@ -4,6 +4,7 @@ import React from 'react';
 import Nav from '../components/Nav';
 import Home from './Home';
 import About from './About';
+import Contact from './Contact';
 import Translation from '../../lang/translation';
 
 /** layout component */
@@ -24,6 +25,7 @@ class Layout extends React.Component {
         <Nav labels={component.nav} />
         <Home />
         <About labels={page.about} />
+        <Contact labels={page.contact} />
       </div>
     );
   }

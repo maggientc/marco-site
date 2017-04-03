@@ -35,7 +35,7 @@ class About extends React.Component {
         <h3 className='container-title'>{labels.title}</h3>
         <p className='container-subTitle'>{labels.subTitle}</p>
         <div className='iconList'>
-          { iconList.map((item) => <IconItem {...item} />) }
+          { iconList.map((item) => <IconItem {...item} key={item.icon} />) }
         </div>
       </div>
     );
