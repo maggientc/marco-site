@@ -1,11 +1,10 @@
 import React from 'react';
 import './teamItem.scss';
-import image from '../../../img/team.jpg';
 
-const TeamItem = ({name, title, description}) => (
+const TeamItem = ({name, title, description, photo}) => (
   <div className='teamItem-container'>
     <div>
-      <img src={image} />
+      <img src={require(`../../../img/${photo}`)} />
       <div role='contact'>
         <h3>{name}</h3>
         <p role='title'>{title}</p>
@@ -16,6 +15,7 @@ const TeamItem = ({name, title, description}) => (
 );
 
 TeamItem.propTypes = {
+  photo: React.PropTypes.string,
   name: React.PropTypes.string,
   title: React.PropTypes.string,
   description: React.PropTypes.string,
