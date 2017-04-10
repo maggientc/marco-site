@@ -57,6 +57,27 @@ const content = {
         description: 'Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.',
       }],
     },
+    'work': {
+      'title': 'OUR WORK',
+      'subTitle': 'What we\'ve done for people',
+      'works': [{
+        photo: 'work.jpg',
+        name: 'John Doe',
+        description: 'Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.',
+      }, {
+        photo: 'work.jpg',
+        name: 'John Doe',
+        description: 'Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.',
+      }, {
+        photo: 'work.jpg',
+        name: 'John Doe',
+        description: 'Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.',
+      }, {
+        photo: 'work.jpg',
+        name: 'John Doe',
+        description: 'Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.',
+      }],
+    },
   },
 };
 

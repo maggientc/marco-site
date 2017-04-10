@@ -17,7 +17,7 @@ class Team extends React.Component {
       <div className='container container-light-gray' id='team'>
         <h3 className='container-title'>{title}</h3>
         <p className='container-subTitle'>{subTitle}</p>
-        <div className='teamList container-list'>
+        <div className='container-list'>
           { members.map((item, index) => <TeamItem {...item} key={index} />) }
         </div>
       </div>
