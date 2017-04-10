@@ -1,5 +1,5 @@
 import React from 'react';
-import {HashLink as Link} from 'react-router-hash-link';
+import {Link} from 'react-router-dom';
 import './home.scss';
 
 /** Home component */
@@ -15,7 +15,7 @@ class Home extends React.Component {
     return (
       <header className="home-display-container" id="home">
         <div role='contact-btn'>
-          <Link to="/#contact" className='link-btn'>{contactBtn}</Link>
+          <Link to="/contact" className='link-btn'>{contactBtn}</Link>
         </div>
       </header>
     );
