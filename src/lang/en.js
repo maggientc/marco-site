@@ -32,6 +32,27 @@ const content = {
       'phone': 'Phone: +00 151515',
       'email': 'Email: mail@mail.com',
     },
+    'team': {
+      'title': 'THE TEAM',
+      'subTitle': 'The ones who runs this company',
+      'members': [{
+        name: 'John Doe',
+        title: 'CEO & Founder',
+        description: 'Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.',
+      }, {
+        name: 'John Doe',
+        title: 'CEO & Founder',
+        description: 'Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.',
+      }, {
+        name: 'John Doe',
+        title: 'CEO & Founder',
+        description: 'Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.',
+      }, {
+        name: 'John Doe',
+        title: 'CEO & Founder',
+        description: 'Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.',
+      }],
+    },
   },
 };
 

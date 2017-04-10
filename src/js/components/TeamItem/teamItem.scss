@@ -1,0 +1,20 @@
+.teamItem-container {
+  padding: 0 8px;
+  width: 24%;
+
+  > div {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+
+    img {
+      width: 100%;
+    }
+
+    div[role='contact'] {
+      padding: 0 16px 8px;
+
+      p[role='title'] {
+        opacity: 0.6;
+      }
+    }
+  }
+}

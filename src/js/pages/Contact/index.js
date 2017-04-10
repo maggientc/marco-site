@@ -39,7 +39,7 @@ class Contact extends React.Component {
       <div className='container container-light-gray' id='contact'>
         <h3 className='container-title'>{labels.title}</h3>
         <p className='container-subTitle'>{labels.subTitle}</p>
-        <div className='contact-container'>
+        <div className='contact-container container-list'>
           <div className='contact-list'>
             <p><i className="fa fa-map-marker"></i>{labels.address}</p>
             <p><i className="fa fa-phone"></i>{labels.phone}</p>
