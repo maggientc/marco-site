@@ -36,18 +36,22 @@ const content = {
       'title': 'THE TEAM',
       'subTitle': 'The ones who runs this company',
       'members': [{
+        photo: 'team.jpg',
         name: 'John Doe',
         title: 'CEO & Founder',
         description: 'Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.',
       }, {
+        photo: 'team.jpg',
         name: 'John Doe',
         title: 'CEO & Founder',
         description: 'Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.',
       }, {
+        photo: 'team.jpg',
         name: 'John Doe',
         title: 'CEO & Founder',
         description: 'Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.',
       }, {
+        photo: 'team.jpg',
         name: 'John Doe',
         title: 'CEO & Founder',
         description: 'Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.',
