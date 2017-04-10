@@ -7,6 +7,7 @@ import Home from './Home';
 import About from './About';
 import Contact from './Contact';
 import Team from './Team';
+import Work from './Work';
 import Translation from '../../lang/translation';
 
 /** layout component */
@@ -28,6 +29,7 @@ class Layout extends React.Component {
         <Home />
         <About labels={page.about} />
         <Team labels={page.team} />
+        <Work labels={page.work} />
         <Contact labels={page.contact} />
         <Footer />
       </div>
