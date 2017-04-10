@@ -1,3 +1,4 @@
+@import '../../../scss/colors.scss';
 $bg-img: url(../../../img/banner.jpg);
 
 .home-display-container {
@@ -5,4 +6,24 @@ $bg-img: url(../../../img/banner.jpg);
   background-size: cover;
   background-image: $bg-img;
   min-height: 100%;
+
+  div[role='contact-btn'] {
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    text-align: center;
+
+    a.link-btn {
+      text-decoration: none;
+      color: $black;
+      background-color: $white;
+      opacity: 0.6;
+      padding: 16px 24px;
+      font-size: 1.2em;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
 }

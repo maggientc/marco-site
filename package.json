@@ -7,7 +7,7 @@
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-google-maps": "beta",
-    "react-router": "^3.0.0"
+    "react-router-dom": "^4.0.0"
   },
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",

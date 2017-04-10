@@ -6,12 +6,11 @@ const content = {
       'contact': 'CONTACT',
       'team': 'TEAM',
       'work': 'WORK',
-      'pricing': 'PRICING',
     },
   },
   'page': {
     'home': {
-      'content': 'I am Home',
+      'contactBtn': 'Contact Us',
     },
     'about': {
       'title': 'ABOUT THE COMPANY',
