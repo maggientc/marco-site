@@ -1,6 +1,11 @@
+@import '../../../scss/variables';
+
 .workItem-container {
   padding: 0 8px;
-  width: 45%;
+  width: 100%;
+  @media screen and (min-width: $break-small) {
+    width: 45%;
+  }
 
   > div {
     padding: 8px;
