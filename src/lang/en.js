@@ -6,7 +6,6 @@ const content = {
       'contact': 'CONTACT',
       'team': 'TEAM',
       'work': 'WORK',
-      'pricing': 'PRICING',
     },
   },
   'page': {
