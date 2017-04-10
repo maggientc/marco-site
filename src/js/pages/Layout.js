@@ -26,7 +26,7 @@ class Layout extends React.Component {
     return (
       <div>
         <Nav labels={component.nav} />
-        <Home />
+        <Home labels={page.home} />
         <About labels={page.about} />
         <Team labels={page.team} />
         <Work labels={page.work} />

@@ -10,7 +10,7 @@ const content = {
   },
   'page': {
     'home': {
-      'content': 'I am Home',
+      'contactBtn': 'Contact Us',
     },
     'about': {
       'title': 'ABOUT THE COMPANY',
