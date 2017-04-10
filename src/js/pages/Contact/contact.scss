@@ -19,7 +19,7 @@
     }
 
     .contact-map {
-      @extend .contact-list
+      @extend .contact-list;
       height: 400px;
     }
   }
