@@ -1,8 +1,14 @@
-@import '../../../scss/colors.scss';
+@import '../../../scss/variables';
 
 .teamItem-container {
-  padding: 0 8px;
-  width: 22%;
+  padding: 8px;
+  width: 100%;
+  @media screen and (min-width: $break-small) {
+    width: 45%;
+  }
+  @media screen and (min-width: $break-large) {
+    width: 22%;
+  }
 
   > div {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);

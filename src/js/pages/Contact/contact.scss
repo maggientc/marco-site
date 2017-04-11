@@ -1,3 +1,5 @@
+@import '../../../scss/variables';
+
 #contact {
   .contact-container {
     padding: 0 8px;
@@ -10,11 +12,14 @@
     }
 
     .contact-list {
-      width: 50%;
+      width: 100%;
+      @media screen and (min-width: $break-small) {
+        width: 50%;
+      }
     }
 
     .contact-map {
-      width: 50%;
+      @extend .contact-list;
       height: 400px;
     }
   }
