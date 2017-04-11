@@ -2,10 +2,23 @@ const content = {
   'lang': 'en',
   'component': {
     'nav': {
-      'about': 'ABOUT',
-      'contact': 'CONTACT',
-      'team': 'TEAM',
-      'work': 'WORK',
+      close: 'Close',
+      links: [{
+        title: 'ABOUT',
+        to: 'about',
+      }, {
+        title: 'TEAM',
+        to: 'team',
+        icon: 'user',
+      }, {
+        title: 'WORK',
+        to: 'work',
+        icon: 'th',
+      }, {
+        title: 'CONTACT',
+        to: 'contact',
+        icon: 'envelope',
+      }],
     },
   },
   'page': {
