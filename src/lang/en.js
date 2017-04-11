@@ -15,14 +15,23 @@ const content = {
     'about': {
       'title': 'ABOUT THE COMPANY',
       'subTitle': 'Key features of our company',
-      'responsiveTitle': 'Responsive',
-      'responsiveContact': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-      'passionTitle': 'Passion',
-      'passionContact': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-      'designTitle': 'Design',
-      'designContact': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-      'supportTitle': 'Support',
-      'supportContact': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+      'features': [{
+        icon: 'desktop',
+        title: 'Responsive',
+        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+      }, {
+        icon: 'heart',
+        title: 'Passion',
+        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+      }, {
+        icon: 'diamond',
+        title: 'Design',
+        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+      }, {
+        icon: 'cog',
+        title: 'Support',
+        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+      }],
     },
     'contact': {
       'title': 'CONTACT',
