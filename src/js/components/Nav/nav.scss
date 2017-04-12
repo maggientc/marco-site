@@ -1,49 +1,115 @@
 @import '../../../scss/variables';
 $icon-img: url(../../../img/icon.png);
 
-.nav-top {
-  position: fixed;
-  top: 0;
+.nav-container {
   width: 100%;
-  z-index: 1;
+  overflow: hidden;
 
-  .nav-navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: $white;
+  .nav-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 
-    li.nav-left {
-      float: left;
+    .nav-navbar {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: $white;
+      position: relative;
 
-      .nav-link {
-        background-position: center;
-        background-size: cover;
-        background-image: $icon-img;
-        width: 145px;
-        height: 44px;
-        margin: 4px;
+      div.nav-left {
+        display: inline-block;
+
+        .nav-link {
+          background-position: center;
+          background-size: cover;
+          background-image: $icon-img;
+          width: 145px;
+          height: 44px;
+          margin: 4px;
+        }
+      }
+
+      div.nav-right {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+
+        .nav-link {
+          padding: 16px;
+          line-height: 24px;
+
+          &:hover {
+            background-color: $gray;
+          }
+        }
+
+        &.nav-large {
+          @media screen and (max-width: $break-small) {
+            display: none;
+          }
+        }
+
+        &.nav-small {
+          cursor: pointer;
+
+          @media screen and (min-width: $break-small) {
+            display: none;
+          }
+        }
       }
     }
+  }
+  .nav-link {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+  }
 
-    li.nav-right {
-      float: right;
+  .nav-sidebar {
+    position: fixed;
+    width: 200px;
+    z-index: 1;
+    height: 100%;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    color: $white;
+    background-color: $black;
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
 
-      .nav-link {
+    @media screen and (min-width: $break-small) {
+      display: none;
+    }
+
+    &.slide-right {
+      transform: translateX(0);
+    }
+
+    .nav-close {
+      &.nav-link {
         padding: 16px;
-        line-height: 24px;
+        line-height: 32px;
+        font-size: 1.2em;
+      }
 
-        &:hover {
-          background-color: $gray;
-        }
+      i {
+        margin-left: 8px;
+        font-size: 0.8em;
       }
     }
 
     .nav-link {
-      text-decoration: none;
-      display: inline-block;
-      color: inherit;
+      padding: 8px 16px;
+      cursor: pointer;
+      display: block;
+      line-height: 1.5em;
+
+      &:hover {
+        color: $black;
+        background-color: $gray;
+      }
     }
   }
 }
+
