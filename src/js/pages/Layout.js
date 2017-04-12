@@ -12,9 +12,20 @@ import Translation from '../../lang/translation';
 
 /** layout component */
 class Layout extends React.Component {
+  state: {
+    lang: string,
+  };
+  _onLangChange: (lang: string) => void;
+
   /** @param {obj} props from parent. */
   constructor(props: Object) {
     super(props);
+
+    this.state = {
+      lang: 'en',
+    };
+
+    this._onLangChange = this._onLangChange.bind(this);
   }
 
   /** @param {string} pathname from url */
@@ -26,6 +37,13 @@ class Layout extends React.Component {
 
     const ele = document.querySelector(`#${nextPage}`);
     if (ele) ele.scrollIntoView();
+  }
+
+  /** @param {string} lang language */
+  _onLangChange(lang: string) {
+    this.setState({
+      lang: lang,
+    });
   }
 
   /** @param {obj} nextProps will receive */
@@ -47,10 +65,14 @@ class Layout extends React.Component {
     // const params = this.props.params;
     // console.log('page', params.page? params.page : 'no page');
 
-    const {component, page} = Translation.getContent('en');
+    const {component, page} = Translation.getContent(this.state.lang);
     return (
       <div>
-        <Nav labels={component.nav} />
+        <Nav
+          labels={component.nav}
+          onLangChange={this._onLangChange}
+          lang={this.state.lang}
+        />
         <Home labels={page.home} />
         <About labels={page.about} />
         <Team labels={page.team} />

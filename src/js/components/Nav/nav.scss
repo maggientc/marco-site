@@ -4,18 +4,35 @@ $icon-img: url(../../../img/icon.png);
 .nav-container {
   width: 100%;
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 
   .nav-top {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
+    background-color: $white;
+    display: flex;
+
+    .nav-lang-btn {
+      cursor: pointer;
+      padding: 16px 0;
+
+      &:hover {
+        background-color: $gray;
+      }
+      
+      >div {
+        border-left: 1px dashed $gray;
+        line-height: 24px;
+        padding: 0 16px;
+      }
+    }
 
     .nav-navbar {
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color: $white;
+      width: 100%;
       position: relative;
 
       div.nav-left {
