@@ -1,9 +1,19 @@
+// @flow
+
 import React from 'react';
-import {Link} from 'react-router-dom';
+import NavTop from './top.js';
+import NavSide from './side.js';
+import LangButton from './langBtn.js';
+
 import './nav.scss';
 
-/** Home component */
+/** Nav component */
 class Nav extends React.Component {
+  state: {
+    showSideBar: boolean,
+  };
+  _toggleSideBar: () => void;
+
   /** @param {obj} props from parent. */
   constructor(props: Object) {
     super(props);
@@ -23,45 +33,22 @@ class Nav extends React.Component {
 
   /** @return {html} Nav */
   render() {
-    const {links, close} = this.props.labels;
+    const {links, langToggle} = this.props.labels;
     return (
       <div className="nav-container">
         <div className="nav-top">
-          <div className="nav-navbar">
-            <div className="nav-left">
-              <Link className="nav-link" to="/" />
-            </div>
-            <div className="nav-right nav-large">
-              {links.map((link) => <Link
-                  key={link.to}
-                  className="nav-link"
-                  to={link.to}
-                >
-                  {link.icon? <i className={`fa fa-${link.icon}`}></i> : null}
-                  {` ${link.title}`}
-                </Link>
-              )}
-            </div>
-            <div className="nav-right nav-small" onClick={this._toggleSideBar}>
-              <i className="fa fa-bars nav-link"></i>
-            </div>
-          </div>
+          <NavTop links={links} toggleSideBar={this._toggleSideBar} />
+          <LangButton
+            label={langToggle}
+            lang={this.props.lang}
+            onLangChange={this.props.onLangChange}
+          />
         </div>
-        <div className={'nav-sidebar' + (this.state.showSideBar? ' slide-right' : '')}>
-          <div className='nav-close nav-link' onClick={this._toggleSideBar}>
-            {close}
-            <i className="fa fa-times" aria-hidden="true"></i>
-          </div>
-          {links.map((link) => <div key={link.to} onClick={this._toggleSideBar}>
-            <Link
-              className="nav-link"
-              to={link.to}
-            >
-              {link.title}
-            </Link>
-          </div>
-          )}
-        </div>
+        <NavSide
+          labels={this.props.labels}
+          toggleSideBar={this._toggleSideBar}
+          show={this.state.showSideBar}
+        />
       </div>
     );
   }
@@ -69,6 +56,8 @@ class Nav extends React.Component {
 
 Nav.propTypes = {
   labels: React.PropTypes.object,
+  lang: React.PropTypes.string,
+  onLangChange: React.PropTypes.func,
 };
 
 export default Nav;

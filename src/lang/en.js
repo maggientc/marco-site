@@ -3,6 +3,7 @@ const content = {
   'component': {
     'nav': {
       close: 'Close',
+      langToggle: 'cn',
       links: [{
         title: 'ABOUT',
         to: 'about',
