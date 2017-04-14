@@ -20,9 +20,10 @@ class Layout extends React.Component {
   /** @param {obj} props from parent. */
   constructor(props: Object) {
     super(props);
+    const lang = localStorage.getItem('lang') || 'en';
 
     this.state = {
-      lang: 'en',
+      lang: lang,
     };
 
     this._onLangChange = this._onLangChange.bind(this);

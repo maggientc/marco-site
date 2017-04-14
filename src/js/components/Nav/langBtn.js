@@ -15,7 +15,7 @@ class LangButton extends React.Component {
       en: 'cn',
       cn: 'en',
     };
-
+    localStorage.setItem('lang', langMap[this.props.lang]);
     this.props.onLangChange(langMap[this.props.lang]);
   }
 
